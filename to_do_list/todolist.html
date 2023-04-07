@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigações</title>
+    <link rel="stylesheet" href="todolist.css">
+    <script src="todolist.js"></script>
+</head>
+
+<body>
+    <h1>Oque fazer quando não tiver nada para fazer:</h1>
+    <div class="principal">
+        <div class="seach_btn">
+            <input type="text" id="input" placeholder="obrigações aqui">
+            <button id="btn" title="agendar" onclick="tarefa()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+            </button>
+        </div>
+        <div class="lista">
+            <ol id="todo">
+
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

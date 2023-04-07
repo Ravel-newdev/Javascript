@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+:root {
+  --color1: var(--#2bb57f);
+  --color2: var(--#043e52);
+  --color3: var(--#016a6d);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #043e52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.seach_btn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.lista {
+    gap: 15px;
+}
+
+#input,
+#btn {
+    border: none;
+    font-size: 20px;
+    padding: 15px;
+    outline: none;
+}
+
+#input {
+    width: 320px;
+    border-radius: 15px;
+}
+
+#btn {
+    background-color: #2bb57f ;
+    color: #fff;
+    border-radius: 50%;
+    width:  48px;
+    height: 48px;
+    cursor: pointer;
+    transition: 4s;
+}
+
+input::hover {
+    background-color: #016a6d ;
+}
+
+#todo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+}
+
+#todo li {
+    list-style-type: none;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    transition: 3s;
+
+}
+
+#btn-apaga{
+    border: none;
+    background-color: #2bb57f;
+    color: #fff;
+    padding: 60px 120px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 4s;
+    border-radius: 50%;
+}
+
+#btn-apaga:hover{
+    background-color: #016a6d;
+}
+
+#apaga{
+    border: none;
+    background-color: #2bb57f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 50%;
+}
+#apaga:hover{
+    background-color: rgb(32, 170, 32);
+}
+#todo li:hover{
+    background-color: #016a6d;
+    transition: 3s;
+    border-radius: 15px;
+    background-color: linear-gradient(to right, #016a6d, #043e52);
+    padding-left: 1em;
+}
